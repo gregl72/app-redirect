@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Redirecting...</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript">
+        // User-Agent detection
+        var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+        if (/android/i.test(userAgent)) {
+            // Redirect to Google Play Store
+            window.location.href = "https://play.google.com/store/apps/details?id=wsj.reader_sp";
+        } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+            // Redirect to Apple App Store
+            window.location.href = "https://apps.apple.com/app/id6727016837";
+        } else {
+            // Optional: Redirect to a fallback page
+            window.location.href = "https://www.adastraperaspera.us";
+        }
+    </script>
+</head>
+<body>
+    <p>Redirecting to the appropriate app store...</p>
+</body>
+</html>
